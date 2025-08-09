@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import ProductGrid from "./components/ProductGrid";
+import AboutUs from "./components/AboutUS";
+import Footer from "./components/Footer";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-sans">
+      {/* Global Header */}
+      <Header />
+
+      {/* Route Definitions */}
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <ProductGrid />
+              <AboutUs />
+            </>
+          }
+        />
+
+        {/* Dynamic Product Details Page */}
+        <Route path="/products/:name" element={<ProductDetails />} />
+      </Routes>
+
+      {/* Global Footer */}
+      <Footer />
     </div>
   );
 }
