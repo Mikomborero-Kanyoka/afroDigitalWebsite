@@ -17,11 +17,11 @@ const AboutUs = () => {
           
           {/* Header - Takes about 1/4 of screen */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-purple-500">
+            <h2 className="text-3xl md:text-6xl font-bold mb-6 text-purple-500">
               About Us
             </h2>
             <div className="w-24 h-1 bg-purple-500 mx-auto mb-8"></div>
-            <p className="text-xl leading-relaxed text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg leading-relaxed text-gray-300 max-w-3xl mx-auto">
               AfroDigital is a bold, creative brand based in Chitungwiza, Zimbabwe. We specialize in vibrant digital prints and wearable art that speaks to culture, identity, and innovation.
             </p>
           </div>
@@ -94,15 +94,20 @@ const AboutUs = () => {
 
           {/* CTA Button */}
           <div className="text-center">
-            <a
-              href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-12 rounded-full transition duration-300 transform hover:scale-105 shadow-lg text-lg hidden lg:block"
-            >
-              Let's Create Something Amazing Together
-            </a>
-          </div>
+  <a
+    href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-lg
+      px-6 py-3 text-sm
+      sm:px-8 sm:py-3.5 sm:text-base
+      md:px-10 md:py-4 md:text-lg
+      lg:px-12 lg:text-xl"
+  >
+    Let's Create Something Amazing Together
+  </a>
+</div>
+
         </div>
       </div>
     </section>

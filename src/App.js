@@ -5,6 +5,8 @@ import ProductGrid from "./components/ProductGrid";
 import AboutUs from "./components/AboutUS";
 import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetails";
+import ProductShowcase from './components/ProductShowcase';
+
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
 
         {/* Dynamic Product Details Page */}
         <Route path="/products/:name" element={<ProductDetails />} />
+         <Route path="/products" element={<ProductShowcase />} />
+
       </Routes>
 
       {/* Global Footer */}

@@ -56,7 +56,7 @@ const ProductGrid = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-clip-text text-transparent mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-clip-text text-transparent mb-4 tracking-tight">
             Our Products
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full transform transition-all duration-700 hover:w-32"></div>
@@ -145,22 +145,26 @@ const ProductGrid = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="text-center mt-16">
-          <button className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white font-semibold rounded-full overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-            <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">
-              Explore All Products
-            </span>
-            <svg
-              className="w-5 h-5 ml-2 transform transition-all duration-300 group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-          </button>
-        </div>
+
+<div className="text-center mt-16">
+  <Link to="/products">
+    <button className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white font-semibold rounded-full overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+      <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">
+        Explore All Products
+      </span>
+      <svg
+        className="w-5 h-5 ml-2 transform transition-all duration-300 group-hover:translate-x-1"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+    </button>
+  </Link>
+</div>
+
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ const Hero = () => {
   }, [currentIndex, fullText]);
 
   return (
-    <section className="relative h-[75vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[75vh] flex items-center justify-center overflow-hidden" id='hero'>
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -46,7 +46,7 @@ const Hero = () => {
         <div className={`transform transition-all duration-1000 ${
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-3xl md:text-7xl font-bold font-monsterrat text-white mb-4 leading-tight">
             Print Bold.{' '}
             <span className="bg-purple-500 bg-clip-text text-transparent">
               Wear Loud!
@@ -58,7 +58,7 @@ const Hero = () => {
         <div className={`transform transition-all duration-1000 delay-300 ${
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light font-palanquin leading-relaxed">
             AfroDigital brings your vision to life with custom-branded apparel that speaks style, identity, and innovation.
             From sleek T-shirts to statement caps, we <span className='text-purple-500'>craft</span> gear that celebrates Black excellence and elevates your message.
 
@@ -70,15 +70,26 @@ const Hero = () => {
         <div className={`transform transition-all duration-1000 delay-600 ${
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
-          <a 
-            href="#products" 
-            className="group inline-flex items-center bg-white text-gray-900 font-semibold px-8 py-4 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            Explore Products
-            <svg className="w-5 h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
+         <a
+  href="#products"
+  className="group inline-flex items-center bg-white text-gray-900 font-semibold px-6 py-3 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl text-sm sm:text-base md:text-lg"
+>
+  Explore Products
+  <svg
+    className="w-4 h-4 sm:w-5 sm:h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M17 8l4 4m0 0l-4 4m4-4H3"
+    />
+  </svg>
+</a>
+
         </div>
       </div>
     </section>

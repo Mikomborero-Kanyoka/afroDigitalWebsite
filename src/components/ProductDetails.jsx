@@ -73,8 +73,8 @@ const ProductDetails = () => {
   
   <div className="max-w-6xl mx-auto relative z-10">
     {/* Product Title */}
-    <div className="text-center mb-16">
-      <h2 className="text-6xl md:text-7xl font-black mb-6 text-white leading-tight tracking-tight">
+    <div className="text-center mb-16 mt-10">
+      <h2 className="text-3xl md:text-4xl font-monsterrat mb-6 text-white leading-tight tracking-tight">
         {product.title}
       </h2>
       <div className="w-24 h-1 bg-purple-500 mx-auto rounded-full mb-8"></div>
