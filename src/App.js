@@ -6,7 +6,7 @@ import AboutUs from "./components/AboutUS";
 import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetails";
 import ProductShowcase from './components/ProductShowcase';
-
+import './output.css'
 
 function App() {
   return (
